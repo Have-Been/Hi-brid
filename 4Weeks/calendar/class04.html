@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>하이브리드앱 4주차 실습</title>
+    <style media="screen">
+      *{margin: 0; padding: 0;}
+      #imgbox
+      {
+        height: 540px;
+        width: 800px;
+        background-color: pink;
+        position: relative;
+        left: 30%;
+        text-align: center;
+      }
+      #img
+      {
+        position: absolute;
+        text-align: center;
+      }
+      #btn
+      {
+          height: 100px;
+          width: 800px;
+          display: block;
+          position: absolute;
+          left: 30%;
+          text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="total">
+      <div id="imgbox">
+        <div id="img"> <img id="image" src="image/cat01.jpg" width="800px" height="540px" alt="고양이"> </div>
+      </div>
+      <div id="btn">
+        <input type='button' value='Left' onclick="left()">
+        <input type='button' value='Right' onclick="right()">
+      </div>
+    </div>
+
+    <script>
+
+        var count = 1;
+
+        function left()
+        {
+          count--;
+          if(count <= 0)  count++;
+          document.getElementById('image').src = "image/cat0" + count.toString()+".jpg";
+        }
+
+        function right()
+        {
+          count++;
+          if(count >= 6)  count--;
+          document.getElementById('image').src = "image/cat0" + count.toString()+".jpg";
+        }
+    </script>
+
+  </body>
+</html>
