@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>5주차 과제 Calender 만들기</title>
+</head>
+<body>
+    <div class="calender">
+        <!-- header와 main 두 개의 덩어리로 나눔 -->
+        <div class="header">
+            <!-- 년도와 월을 담당할 year-month -->
+            <div class="year-month"></div>
+            <!-- 양 옆의 월로 넘어갈 수 있는 버튼과 오늘로 바로 올 수 있는 버튼 생성 -->
+            <div class="nav">
+                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="days">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
