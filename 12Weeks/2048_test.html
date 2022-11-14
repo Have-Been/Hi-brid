@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>12주차 실습 - 2048 만들기</title>
+  </head>
+  <body>
+    <style>
+      #app{
+        width: 582px;
+        height: 582px;
+        /* 그리드를 사용했기 때문에 사이즈를 줄여도 알아서 줄어든다. */
+        background-color: beige;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* 행을 4개로 하면서 비율을 일정하게 하고 싶다 => 1fr 1fr 1fr 1fr */
+        /* fr = fraction, 분수. gird의 단위는 px이 아닌 분수이기 때문. */
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        /* 안쪽 여백 -> padding */
+
+      }
+      .bgBlock{
+        background-color: burlywood;
+      }
+  </style>
+    <div id = "app">
+      <!-- 배열로 생성해야하기 때문에 class -->
+
+      <div class="bgBlock" v-for="index in bgcount">{{index}}</div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script>
+    const {createApp} = Vue;
+    createApp({
+      data() {
+        return{
+          bgcount : 16,
+        }
+      },
+      mounted(){
+        console.log("마운트 성공!!");
+      },
+
+    }).mount("#app")
+  </script>
+</html>
