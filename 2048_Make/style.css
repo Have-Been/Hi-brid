@@ -1,0 +1,35 @@
+#app {
+    width: 582px;
+    height: 582px;
+    /* 그리드를 사용했기 때문에 사이즈를 줄여도 알아서 줄어든다. */
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 행을 4개로 하면서 비율을 일정하게 하고 싶다 => 1fr 1fr 1fr 1fr */
+    /* fr = fraction, 분수. gird의 단위는 px이 아닌 분수이기 때문. */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /* 안쪽 여백 -> padding */
+}
+
+.bgBlock {
+    background-color: burlywood;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#boxarea{
+    display: none;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-color: brown;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
