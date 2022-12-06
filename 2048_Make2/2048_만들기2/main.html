@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>2048 만들기</title>
+    <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+  <div class="gametitle">
+      <p id="title">2048</p>
+      <button id="startBtn" onclick="start()">Start</button>
+      <div id="scorePad">
+        <p id="scoreTitle">Score</p>
+        <p id="scoreText"></p>
+      </div>
+  </div>
+      
+    <div id="app">
+        <!-- 배열로 생성해야하기 때문에 class -->
+        <div class="bgBlock" v-for="index in bgcount">{{index}}</div>
+        <!-- v-"for" 의 for는 반복문의 for -->
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3"></script>
+<script src="mainScript.js"></script>
+
+</html>

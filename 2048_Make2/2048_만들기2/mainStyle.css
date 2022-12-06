@@ -1,0 +1,68 @@
+body{
+  background-color: #1c1b1a;
+}
+
+/* .gametitle{
+  margin-left: 70px;
+  margin-top: 35px;
+  height: 50px;
+} */
+#title{
+  margin: 40px;
+  padding: 0;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* #scorePad{
+  width: 148px;
+  height: 35px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+#scoreTitle{
+  font-size: 50px;
+  color: #ffffff;
+}
+
+#scoreText{
+  font-size: 40px;
+  margin: 0;
+  color: #ffffff;
+} */
+
+#startBtn{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#gamearea{
+  text-align: center;
+}
+
+#app {
+    width: 582px;
+    height: 582px;
+    /* 그리드를 사용했기 때문에 사이즈를 줄여도 알아서 줄어든다. */
+    background-color: #1c1b1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 행을 4개로 하면서 비율을 일정하게 하고 싶다 => 1fr 1fr 1fr 1fr */
+    /* fr = fraction, 분수. gird의 단위는 px이 아닌 분수이기 때문. */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /* 안쪽 여백 -> padding */
+}
+
+.bgBlock {
+    background-color: #FBEDDC;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
