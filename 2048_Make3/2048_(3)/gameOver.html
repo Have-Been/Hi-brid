@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2048</title>
+    <style media="screen">
+      body{
+        background-color: #1c1b1a;
+      }
+      .titleView{
+        margin-top: 22%;
+      }
+      #gameoverText{
+        top: 500px;
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      button{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 40px;
+      }
+      .btn{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleView">
+      <p id="gameoverText">GameOver !</p>
+      <div class="btn">
+        <button type="button" onclick="document.location = 'main.html'">Retry?</button>
+      </div>
+  </div>
+
+  </body>
+</html>
